@@ -1,30 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+<!DOCTYPE html>
 
-<title>Marco Bascietto &sect; {{ page.name }}</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<meta http-equiv="Content-Language" content="en" />
-<meta name="language" content="en" />
-<meta name="robots" content="all" />
-<meta http-equiv="imagetoolbar" content="false" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/css/monokai.css" />
 
-<meta name="description" content="Marco Bascietto's GitHub home-page" />
-<meta name="keywords" content="recommender systems, music, AI, coder, CBR, portfolio, CV, curriculum, work" />
-<meta name="viewport" content="width=960" />
-<link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-</head>
-<body>
-<h1><a href="/" rel="start" title="Home Page (accesskey 0)" accesskey="0">Marco Bascietto</a></h1>
-    
-{{ content }}
+    <link rel="stylesheet"
+          type="text/css"
+          href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+
+  </head>
+
+  <body>
+    <div class="top"></div>
+
+    <div class="sidebar">
+      <a href="/" class="logo">Tom Bell</a>
+
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/experiments">Experiments</a></li>
+        <li><a href="/talks">Talks</a></li>
+        <li><a href="/ask">Ask me a question</a></li>
+      </ul>
+
+      <p>
+        Hello, I am Tom Bell. I am a Rubyist, CoffeeScript barista and Node.js
+        ninja. Hubot helps maintain me, or is that the other way around?
+      </p>
+
+      <p>
+        You can find me as <strong>@thetombell</strong> on
+        <a href="http://twitter.com/thetombell" class="twitter">Twitter</a>,
+        <strong>tombell</strong> on
+        <a href="https://github.com/tombell">GitHub</a>
+        and pretty much everywhere else.
+      </p>
+    </div>
   
-<div id="footer_box">
-    Last updated on August 13, 2010 &middot;
-    <q>Nothing short of everything will really do</q> &middot;
-    Contact me at <span class="email">marco.bascietto@ibaf.cnr.it</span>
-</div>
-
-</body></html>
+    <div class="main">
+      {{ content }}
+    </div>
+  </body>
+  
+  <script>
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '4eb1b1fd613f5d6151000005');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</html>

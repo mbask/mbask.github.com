@@ -1,1 +1,4 @@
-permalink: /:title
+title: Tom Bell
+permalink: /posts/:title
+markdown: rdiscount
+pygments: true
